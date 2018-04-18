@@ -46,6 +46,14 @@
       <i class="material-icons">menu</i>
     </button>
     <span class="title">Angular Material Demo</span>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="myDatepicker">
+      <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+      <mat-datepicker #myDatepicker></mat-datepicker>
+    </mat-form-field>
+
+
   </mat-toolbar>
 
   <div class="app-content">
